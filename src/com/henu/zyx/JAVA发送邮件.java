@@ -49,7 +49,7 @@ public class JAVA发送邮件 {
         message.setFrom(form);
 
         // 设置收件人
-        InternetAddress to = new InternetAddress("396790244@qq.com");
+        InternetAddress to = new InternetAddress("*******@qq.com");
         message.setRecipient(RecipientType.TO, to);
 
         // 设置抄送

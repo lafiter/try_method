@@ -40,8 +40,8 @@ public class MailTest {
                 // 用户名、密码
                 //String userName = props.getProperty("mail.user");
                // String password = props.getProperty("mail.password");
-            	String userName="13383821198@163.com";
-            	String password="5201314zyx";
+            	String userName="*******@163.com";
+            	String password="*******";
                 return new PasswordAuthentication(userName, password);
             }
         };
@@ -55,7 +55,7 @@ public class MailTest {
         message.setFrom(form);
 
         // 设置收件人
-        InternetAddress to = new InternetAddress("396790244@qq.com");
+        InternetAddress to = new InternetAddress("*******@qq.com");
         message.setRecipient(RecipientType.TO, to);
 
         // 设置抄送

@@ -15,12 +15,12 @@ public class SendMail {
     	 prop.put("mail.smtp.timeout", "25000");
     	 Session session = Session.getDefaultInstance(prop,new Authenticator(){
     		 protected PasswordAuthentication getPasswordAuthentication(){
-    			 return new PasswordAuthentication("396790244@qq.com","706430283zyx.");
+    			 return new PasswordAuthentication("*******@qq.com","*******.");
     		 }
     	 });
     	 Message message = new MimeMessage(session);
     	 try {
-			message.setFrom(new InternetAddress("396790244@qq.com"));
+			message.setFrom(new InternetAddress("*******@qq.com"));
 			message.setSubject("UTF-8");
     	    message.setRecipients(Message.RecipientType.TO,InternetAddress.parse(receiveMailAddress));
     	 
@@ -37,7 +37,7 @@ public class SendMail {
      }
 	public static void main(String[] args) {
 		
-	     SendMail.send("396790244@qq.com","706430283zyx."); 
+	     SendMail.send("*******@qq.com","*******."); 
 	  
 	}
 
